@@ -2,8 +2,8 @@
 #include <math.h>
 double f(double x,double y){return x+y;}
 int main(void){
-    for(int n=1;n<=10000;n++){
-        if(!(n==1||n%1000==0))continue; 
+    for(int k=1,n=1;k<=10;k++){
+        n*=2;
         double a=0,b=2,y0=1,x=a,y=y0,h=(b-a)/n;
         while(x<b){
             double k1=f(x      ,y         ),k2=f(x+h/2.0,y+k1*h/2.0),
